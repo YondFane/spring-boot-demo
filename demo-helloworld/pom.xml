@@ -6,12 +6,11 @@
         <groupId>com.yfan</groupId>
         <artifactId>spring-boot-demo</artifactId>
         <version>1.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.yfan</groupId>
     <artifactId>demo-helloworld</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>demo-helloworld</name>
     <description>demo-helloworld</description>
 
