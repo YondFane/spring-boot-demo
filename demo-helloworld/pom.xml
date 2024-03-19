@@ -8,7 +8,6 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.yfan</groupId>
     <artifactId>demo-helloworld</artifactId>
     <version>1.0.0</version>
     <name>demo-helloworld</name>
