@@ -11,6 +11,7 @@
     <modules>
         <module>demo-helloworld</module>
         <module>demo-redis</module>
+        <module>demo-mysql-jdbc</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -24,7 +25,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mysql.version>8.0.21</mysql.version>
         <spring.boot.version>3.2.3</spring.boot.version>
-        <hutool.version>5.4.5</hutool.version>
+        <hutool.version>5.8.26</hutool.version>
+        <lombok.version>1.18.32</lombok.version>
+        <knife4j.version>4.4.0</knife4j.version>
         <!--<guava.version>29.0-jre</guava.version>-->
     </properties>
 
@@ -73,7 +76,13 @@
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
-                <version>4.4.0</version>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

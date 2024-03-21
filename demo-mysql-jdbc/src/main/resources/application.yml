@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo-mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&autoReconnect=true&characterEncoding=utf8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
