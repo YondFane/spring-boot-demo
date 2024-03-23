@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /demo-task
+
+# 下面的配置等同于 TaskConfig 启动类需要加上 @EnableScheduling注解
+#spring:
+#  task:
+#    scheduling:
+#      pool:
+#        size: 20
+#      thread-name-prefix: Job-Thread-
+#
+
+
+

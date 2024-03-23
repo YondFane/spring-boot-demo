@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/demo-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/demo-log-app/pom.xml" />
         <option value="$PROJECT_DIR$/demo-async/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-task/pom.xml" />
       </list>
     </option>
   </component>
