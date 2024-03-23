@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/demo-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/demo-redis/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-log-app/pom.xml" />
       </list>
     </option>
   </component>
