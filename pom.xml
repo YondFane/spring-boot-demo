@@ -15,6 +15,7 @@
         <module>demo-log-aop</module>
         <module>demo-async</module>
         <module>demo-task</module>
+        <module>demo-task-xxl-job</module>
     </modules>
 
     <packaging>pom</packaging>
