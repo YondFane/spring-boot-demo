@@ -16,6 +16,7 @@
         <module>demo-async</module>
         <module>demo-task</module>
         <module>demo-task-xxl-job</module>
+        <module>demo-elasticsearch</module>
     </modules>
 
     <packaging>pom</packaging>
