@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/demo-task/pom.xml" />
         <option value="$PROJECT_DIR$/demo-task-xxl-job/pom.xml" />
         <option value="$PROJECT_DIR$/demo-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-mongodb/pom.xml" />
       </list>
     </option>
   </component>

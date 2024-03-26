@@ -17,6 +17,7 @@
         <module>demo-task</module>
         <module>demo-task-xxl-job</module>
         <module>demo-elasticsearch</module>
+        <module>demo-mongodb</module>
     </modules>
 
     <packaging>pom</packaging>
