@@ -3,6 +3,14 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/demo-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-async/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-dubbo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-elasticsearch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-helloworld/src/main/java" charset="UTF-8" />

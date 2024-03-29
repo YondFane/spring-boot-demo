@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yfan</groupId>
+        <artifactId>spring-boot-demo</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.yfan</groupId>
+    <artifactId>demo-dubbo</artifactId>
+    <version>1.0.0</version>
+    <name>demo-dubbo</name>
+    <description>demo-dubbo</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>demo-dubbo-common</module>
+        <module>demo-dubbo-provider</module>
+        <module>demo-dubbo-consumer</module>
+    </modules>
+
+    <properties>
+        <java.version>21</java.version>
+        <dubbo.starter.version>2.0.0</dubbo.starter.version>
+        <zkclient.version>0.10</zkclient.version>
+    </properties>
+
+</project>
