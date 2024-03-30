@@ -3,16 +3,16 @@ server:
   servlet:
     context-path: /demo
 
-spring:
-  dubbo:
-    application:
-      name: demo-dubbo-consumer
-      registry: zookeeper://192.168.40.131:2181
-
-
+dubbo:
+  application:
+    name: demo-dubbo-consumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://127.0.0.1:2181
 
 knife4j:
   enable: true
   setting:
     language: zh_cn
-

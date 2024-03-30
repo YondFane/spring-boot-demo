@@ -1,8 +1,8 @@
 package com.yfan.demodubboprovider.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.yfan.demodubbocommon.service.HelloService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Version: 1.0
  */
 @Slf4j
-@Service
+@DubboService
 @Component
 public class HelloServiceImpl implements HelloService {
 
