@@ -19,6 +19,7 @@
         <module>demo-elasticsearch</module>
         <module>demo-mongodb</module>
         <module>demo-dubbo</module>
+        <module>demo-mq-rabbitmq</module>
     </modules>
 
     <packaging>pom</packaging>
