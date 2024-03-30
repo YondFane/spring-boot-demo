@@ -14,6 +14,13 @@
 
 4. 启动容器：`docker start zk`
 
+## windows安装zookeeper
+zookeeper下载地址
+https://archive.apache.org/dist/zookeeper/
+
+1、config目录的 zoo_sample.cfg 改为 zoo.cfg
+2、bin目录启动 zkServer.cmd
+
 ## 运行步骤
 
 1. 进入服务提供方 `spring-boot-demo-dubbo-provider` 目录，运行 `SpringBootDemoDubboProviderApplication.java`
