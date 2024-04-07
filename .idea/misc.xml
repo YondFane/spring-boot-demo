@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/demo-dubbo/demo-dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/demo-dubbo/demo-dubbo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mq-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-mq-kafka/pom.xml" />
       </list>
     </option>
   </component>

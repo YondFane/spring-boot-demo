@@ -20,6 +20,7 @@
         <module>demo-mongodb</module>
         <module>demo-dubbo</module>
         <module>demo-mq-rabbitmq</module>
+        <module>demo-mq-kafka</module>
     </modules>
 
     <packaging>pom</packaging>
