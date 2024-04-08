@@ -29,4 +29,18 @@ public class MessageHandler {
             acknowledgment.acknowledge();
         }
     }
+
+    @KafkaListener(topics = KafkaConsts.TOPIC_MESSAGE, containerFactory = "ackContainerFactory")
+    public void handleMessageVo(ConsumerRecord record, Acknowledgment acknowledgment) {
+        try {
+            String message = (String) record.value();
+            log.info("handleMessageVo-收到消息: {}", record);
+            log.info("handleMessageVo-收到消息: {}", message);
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+        } finally {
+            // 手动提交 offset
+            acknowledgment.acknowledge();
+        }
+    }
 }

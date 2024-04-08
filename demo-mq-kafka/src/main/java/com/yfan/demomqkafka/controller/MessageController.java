@@ -1,6 +1,9 @@
 package com.yfan.demomqkafka.controller;
 
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
 import com.yfan.demomqkafka.constants.KafkaConsts;
+import com.yfan.demomqkafka.vo.MessageVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
@@ -27,14 +30,31 @@ import java.util.concurrent.ExecutionException;
 public class MessageController {
 
     @Autowired
-    private KafkaTemplate kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate;
 
     @GetMapping("send")
     @ResponseBody
     public Object send() throws ExecutionException, InterruptedException {
-        CompletableFuture<SendResult<String, Object>> completableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_TEST, "key", System.currentTimeMillis() + "");
-        SendResult<String, Object> sendResult = completableFuture.get();
-        ProducerRecord<String, Object> producerRecord = sendResult.getProducerRecord();
+        CompletableFuture<SendResult<String, String>> completableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_TEST, "key", System.currentTimeMillis() + "");
+        SendResult<String, String> sendResult = completableFuture.get();
+        ProducerRecord<String, String> producerRecord = sendResult.getProducerRecord();
+        RecordMetadata recordMetadata = sendResult.getRecordMetadata();
+
+        log.info("producerRecord:{}", producerRecord);
+        log.info("recordMetadata:{}", recordMetadata);
+
+        return "success";
+    }
+
+    @GetMapping("sendMessage")
+    @ResponseBody
+    public Object sendMessage() throws ExecutionException, InterruptedException {
+
+        MessageVo messageVo = MessageVo.builder().id(1000).name("测试").build();
+
+        CompletableFuture<SendResult<String, String>> completableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_MESSAGE, messageVo.getId().toString(), JSONUtil.toJsonStr(messageVo));
+        SendResult<String, String> sendResult = completableFuture.get();
+        ProducerRecord<String, String> producerRecord = sendResult.getProducerRecord();
         RecordMetadata recordMetadata = sendResult.getRecordMetadata();
 
         log.info("producerRecord:{}", producerRecord);
