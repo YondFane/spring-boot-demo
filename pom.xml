@@ -18,6 +18,7 @@
         <module>demo-task-xxl-job</module>
         <module>demo-elasticsearch</module>
         <module>demo-mongodb</module>
+        <module>demo-zookeeper</module>
         <module>demo-dubbo</module>
         <module>demo-mq-rabbitmq</module>
         <module>demo-mq-kafka</module>
