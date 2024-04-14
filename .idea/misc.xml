@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/demo-mq-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mq-kafka/pom.xml" />
         <option value="$PROJECT_DIR$/demo-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-websocket/pom.xml" />
       </list>
     </option>
   </component>

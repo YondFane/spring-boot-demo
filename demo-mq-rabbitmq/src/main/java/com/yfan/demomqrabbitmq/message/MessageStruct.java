@@ -12,8 +12,8 @@ import java.io.Serializable;
  * 测试消息体
  * </p>
  *
- * @author yangkai.shen
- * @date Created in 2018-12-29 16:22
+ * @author YondFane
+ * @date 2018-12-29 16:22
  */
 @Data
 @Builder
