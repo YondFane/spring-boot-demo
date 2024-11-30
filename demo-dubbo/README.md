@@ -55,7 +55,7 @@ https://archive.apache.org/dist/zookeeper/
     </modules>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>8</java.version>
         <dubbo.starter.version>3.2.11</dubbo.starter.version>
         <dubbo.version>3.2.11</dubbo.version>
     </properties>

@@ -10,6 +10,7 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
+import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -35,8 +36,8 @@ public class MessageController {
     @GetMapping("send")
     @ResponseBody
     public Object send() throws ExecutionException, InterruptedException {
-        CompletableFuture<SendResult<String, String>> completableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_TEST, "key", System.currentTimeMillis() + "");
-        SendResult<String, String> sendResult = completableFuture.get();
+        ListenableFuture<SendResult<String, String>> sendResultListenableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_TEST, "key", System.currentTimeMillis() + "");
+        SendResult<String, String> sendResult = sendResultListenableFuture.get();
         ProducerRecord<String, String> producerRecord = sendResult.getProducerRecord();
         RecordMetadata recordMetadata = sendResult.getRecordMetadata();
 
@@ -52,8 +53,8 @@ public class MessageController {
 
         MessageVo messageVo = MessageVo.builder().id(1000).name("测试").build();
 
-        CompletableFuture<SendResult<String, String>> completableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_MESSAGE, messageVo.getId().toString(), JSONUtil.toJsonStr(messageVo));
-        SendResult<String, String> sendResult = completableFuture.get();
+        ListenableFuture<SendResult<String, String>> sendResultListenableFuture = kafkaTemplate.send(KafkaConsts.TOPIC_MESSAGE, messageVo.getId().toString(), JSONUtil.toJsonStr(messageVo));
+        SendResult<String, String> sendResult = sendResultListenableFuture.get();
         ProducerRecord<String, String> producerRecord = sendResult.getProducerRecord();
         RecordMetadata recordMetadata = sendResult.getRecordMetadata();
 

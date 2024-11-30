@@ -3,6 +3,8 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/demo-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-async/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-dubbo/demo-dubbo-consumer/src/main/java" charset="UTF-8" />

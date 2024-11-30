@@ -22,7 +22,7 @@
     <description>demo-zookeeper</description>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>8</java.version>
         <zookeeper-discovery.version>4.1.1</zookeeper-discovery.version>
     </properties>
 
