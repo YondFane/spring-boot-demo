@@ -27,6 +27,8 @@
     <file url="file://$PROJECT_DIR$/demo-mq-rabbitmq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-mysql-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-mysql-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-redis/src/main/java" charset="UTF-8" />

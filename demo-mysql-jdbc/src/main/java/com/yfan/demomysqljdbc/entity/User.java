@@ -1,6 +1,8 @@
 package com.yfan.demomysqljdbc.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Author: YondFane
@@ -9,12 +11,20 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
-    private Integer id;
+    private Long id;
 
     private String name;
 
-    private String cname;
+    private Integer age;
+
+    private Integer sex;
+
+    private Long deposit;
+
+    private Long version;
 
 }

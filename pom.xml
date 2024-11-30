@@ -12,6 +12,7 @@
         <module>demo-helloworld</module>
         <module>demo-redis</module>
         <module>demo-mysql-jdbc</module>
+        <module>demo-mysql-mybatis</module>
         <module>demo-log-aop</module>
         <module>demo-async</module>
         <module>demo-task</module>
@@ -38,7 +39,7 @@
         <spring.boot.version>2.7.18</spring.boot.version>
         <hutool.version>5.8.26</hutool.version>
         <lombok.version>1.18.32</lombok.version>
-        <knife4j.version>4.5.0</knife4j.version>
+        <knife4j.version>2.0.9</knife4j.version>
         <guava.version>33.1.0-jre</guava.version>
         <user.agent.version>1.21</user.agent.version>
     </properties>
@@ -87,7 +88,7 @@
             <!--接口调试-->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
             </dependency>
 
