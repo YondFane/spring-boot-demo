@@ -22,4 +22,10 @@ public interface UserMapper {
      */
     List<User> listAll();
 
+    /**
+     * 根据ID查询用户
+     * @param id
+     * @return
+     */
+    User queryById(Integer id);
 }

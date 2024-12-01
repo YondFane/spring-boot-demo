@@ -4,6 +4,6 @@ CREATE TABLE `user` (
     `sex` tinyint(4) DEFAULT null COMMENT '性别 0 女 1 男',
     `age` tinyint(4) DEFAULT null COMMENT '年龄',
     `deposit` bigint(20) DEFAULT null COMMENT '存款',
-    `vserson` bigint(20) default null COMMENT '版本号',
+    `version` bigint(20) default null COMMENT '版本号',
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;

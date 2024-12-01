@@ -9,6 +9,10 @@
         select * from user
     </select>
 
+    <select id="queryById" resultType="User" parameterType="int">
+        select * from user where id = #{id}
+    </select>
+
 
     <!--<insert id="insert">
         insert into users (id, name, funkyNumber, roundingMode) values (
