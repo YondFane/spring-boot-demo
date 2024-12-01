@@ -2,6 +2,7 @@ package com.yfan.demomysqlmybatis.service;
 
 import com.yfan.demomysqlmybatis.entity.User;
 import com.yfan.demomysqlmybatis.mapper.UserMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ import java.util.List;
  * @Version: 1.0
  */
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -28,10 +30,13 @@ public class UserServiceImpl implements UserService {
         User user = users.get(0);
         user.setName("测试100");
         try {
-            Thread.sleep(1000);
+            log.info("{}-sleep-start", Thread.currentThread().getName());
+            Thread.sleep(3000);
+            log.info("{}-sleep-end", Thread.currentThread().getName());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        log.info("listAll-users:{}", users);
         return users;
     }
 

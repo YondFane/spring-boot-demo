@@ -4,6 +4,7 @@ import com.yfan.demomysqlmybatis.entity.User;
 import com.yfan.demomysqlmybatis.mapper.UserMapper;
 import com.yfan.demomysqlmybatis.service.UserService;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @Autowired
@@ -32,6 +34,7 @@ public class UserController {
     @GetMapping("/listAll")
     @ApiOperation("查询所有用户")
     public List<User> listAll(){
+        log.info("listAll-{}", Thread.currentThread().getName());
         return userService.listAll();
     }
 
