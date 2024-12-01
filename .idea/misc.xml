@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/demo-websocket/pom.xml" />
         <option value="$PROJECT_DIR$/demo-cache/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mysql-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-redisson/pom.xml" />
       </list>
     </option>
   </component>

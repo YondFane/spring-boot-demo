@@ -24,6 +24,7 @@
         <module>demo-mq-rabbitmq</module>
         <module>demo-mq-kafka</module>
         <module>demo-websocket</module>
+        <module>demo-redisson</module>
     </modules>
 
     <packaging>pom</packaging>
