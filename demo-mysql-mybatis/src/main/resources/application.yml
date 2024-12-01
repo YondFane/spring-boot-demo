@@ -1,11 +1,15 @@
 spring:
   application:
     name: demo-mysql-mybatis
+  port: 8080
   datasource:
     url: jdbc:mysql://localhost:3306/test?useSSL=false&autoReconnect=true&characterEncoding=utf8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 
 mybatis:
@@ -17,7 +21,23 @@ mybatis:
 
 
 knife4j:
-  basic:
-    enable: true
+  enable: true
+  documents:
+    - group: Test Group
+      name: My Documents
+      locations: classpath:wiki/*
+  setting:
+    # default lang
+    language: zh-CN
+    # footer
+    enableFooter: false
+    enableFooterCustom: true
+    footerCustomContent: YFAN
+    # header
+    enableHomeCustom: true
+    homeCustomLocation: classpath:wiki/README.md
+    # models
+    enableSwaggerModels: true
+    swaggerModelName: My Models
 
 

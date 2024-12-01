@@ -39,7 +39,7 @@
         <spring.boot.version>2.7.18</spring.boot.version>
         <hutool.version>5.8.26</hutool.version>
         <lombok.version>1.18.32</lombok.version>
-        <knife4j.version>2.0.9</knife4j.version>
+        <knife4j.version>3.0.3</knife4j.version>
         <guava.version>33.1.0-jre</guava.version>
         <user.agent.version>1.21</user.agent.version>
     </properties>

@@ -14,10 +14,29 @@ spring:
         allow-core-thread-timeout: true
       # 线程名称前缀
       thread-name-prefix: async-task-
-
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 knife4j:
   enable: true
+  documents:
+    - group: Test Group
+      name: My Documents
+      locations: classpath:wiki/*
+  setting:
+    # default lang
+    language: zh-CN
+    # footer
+    enableFooter: false
+    enableFooterCustom: true
+    footerCustomContent: YFAN
+    # header
+    enableHomeCustom: true
+    homeCustomLocation: classpath:wiki/README.md
+    # models
+    enableSwaggerModels: true
+    swaggerModelName: My Models
 
 
 #server:

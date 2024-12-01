@@ -1,7 +1,9 @@
 spring:
   application:
     name: demo-redis
-
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   data:
     redis:
       host: 127.0.0.1
@@ -10,4 +12,21 @@ spring:
 
 knife4j:
   enable: true
+  documents:
+    - group: Test Group
+      name: My Documents
+      locations: classpath:wiki/*
+  setting:
+    # default lang
+    language: zh-CN
+    # footer
+    enableFooter: false
+    enableFooterCustom: true
+    footerCustomContent: YFAN
+    # header
+    enableHomeCustom: true
+    homeCustomLocation: classpath:wiki/README.md
+    # models
+    enableSwaggerModels: true
+    swaggerModelName: My Models
 
