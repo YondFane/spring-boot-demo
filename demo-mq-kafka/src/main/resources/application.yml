@@ -2,9 +2,7 @@ server:
   port: 8090
   servlet:
     context-path: /demo
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
+
 spring:
   kafka:
     bootstrap-servers: 127.0.0.1:9092
@@ -28,7 +26,9 @@ spring:
       concurrency: 5
       # 手动提交
       ack-mode: manual_immediate
-
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 
 knife4j:
