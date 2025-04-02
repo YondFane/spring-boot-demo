@@ -25,6 +25,8 @@
     <file url="file://$PROJECT_DIR$/demo-mq-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mq-rabbitmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mq-rabbitmq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-mysql-hibernate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-mysql-hibernate/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql-jdbc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-mysql-mybatis/src/main/java" charset="UTF-8" />
@@ -35,6 +37,8 @@
     <file url="file://$PROJECT_DIR$/demo-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-redisson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-redisson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task-xxl-job/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task-xxl-job/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task/src/main/java" charset="UTF-8" />
