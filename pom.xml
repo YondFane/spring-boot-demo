@@ -26,6 +26,7 @@
         <module>demo-mq-kafka</module>
         <module>demo-websocket</module>
         <module>demo-redisson</module>
+        <module>demo-security</module>
     </modules>
 
     <packaging>pom</packaging>
