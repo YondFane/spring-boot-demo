@@ -27,6 +27,7 @@
         <module>demo-websocket</module>
         <module>demo-redisson</module>
         <module>demo-security</module>
+        <module>demo-shardingsphere</module>
     </modules>
 
     <packaging>pom</packaging>

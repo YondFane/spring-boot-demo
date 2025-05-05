@@ -39,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/demo-redisson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-shardingsphere/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-shardingsphere/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task-xxl-job/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task-xxl-job/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-task/src/main/java" charset="UTF-8" />

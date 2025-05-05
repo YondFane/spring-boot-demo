@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/demo-redisson/pom.xml" />
         <option value="$PROJECT_DIR$/demo-security/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mysql-hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-shardingsphere/pom.xml" />
       </list>
     </option>
   </component>

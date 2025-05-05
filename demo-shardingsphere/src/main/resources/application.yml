@@ -1,0 +1,62 @@
+spring:
+  shardingsphere:
+    mode:
+      type: Standalone # Standalone=单机模式或 Cluster、Memory
+    datasource:
+      names: ds0
+      ds0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+        username: root
+        password: 123456
+#      ds1:
+#        type: com.zaxxer.hikari.HikariDataSource
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        jdbc-url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+#        username: root
+#        password: 123456
+    rules:
+      sharding:
+        tables:
+          t_order:
+            # 定义实际的数据节点范围。这里表示 `t_order` 表的数据会根据年份（2025 到 2035）和月份（1 -12 月）分布在不同的节点上
+#            actual-data-nodes: ds$->{0..1}.t_order_$->{202501..203512}
+            actual-data-nodes: ds0.t_order_$->{202501..203512}
+            table-strategy:
+              standard:
+                # 指定分片列为 `create_time`，即根据 `create_time` 列的值进行数据分片
+                sharding-column: create_time_txt
+                # 指定分片算法的名称，这里使用之前定义的 `tba-monthly`，表示按月进行分片
+                sharding-algorithm-name: tba-monthly
+        sharding-algorithms:
+          # 自定义分库分表的算法 这里实现的是按年月份-水平分表不分库
+          #          tba-monthly:
+          #            type: CLASS_BASED
+          #            props:
+          #              strategy: STANDARD
+          #              algorithmClassName: com.shardingsphere.CustomTableShardingAlgorithm
+
+          #直接配置按年月份-水平分表不分库
+          tba-monthly: #sharding-algorithm-name配置的名称
+            type: INTERVAL  # 指定分片策略的类型为基于时间区间的分片策略
+            props:
+              datetime-pattern: yyyy-MM-dd HH:mm:ss  # 定义时间格式，表示日期和时间的格式为年-月-日 时:分:秒
+              datetime-lower: 2025-01-01 00:00:00  # 设置分片的开始时间，即时间范围的下限
+              datetime-upper: 2035-12-31 23:59:59  # 设置分片的结束时间，即时间范围的上限
+              sharding-suffix-pattern: yyyyMM  # 定义生成分片表后缀的时间格式，这里是按年和月进行分片（如 202301, 202302 等）
+              datetime-interval-amount: 1  # 定义分片的时间间隔大小，这里是每个间隔为 1（即每个月创建一个分片）
+              datetime-interval-unit: MONTHS  # 指定时间间隔的单位，这里为按月分片
+          # 自定义分库分表的算法 这里实现的是按年月份-水平分表不分库
+#          tba-monthly:
+#            type: CLASS_BASED
+#            props:
+#              strategy: STANDARD
+#              algorithmClassName: com.shardingsphere.CustomTableShardingAlgorithm
+
+    props:
+      sql-show: true # 开启 SQL 打印，便于调试
+
+mybatis-plus:
+  global-config:
+    banner: false
